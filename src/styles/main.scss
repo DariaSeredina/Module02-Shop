@@ -270,7 +270,7 @@ body {
     background-position-x: center;
     background-repeat: no-repeat;
     padding-top: 2rem;
-    padding-bottom: 200px;
+    padding-bottom: 12.8rem;
     &__text {
         margin-top: 6rem;
         max-width: 700px;
@@ -284,19 +284,84 @@ body {
 .swiper {
     overflow: initial;
     &-slide {
-        height: 514px;
-        border: 3px solid rgba($green, 0.4);
-        border-radius: 20px;
+        border: 3px solid rgba($green, .4);
+        border-radius: 2rem;
+        padding: 4rem 3.7rem;
+        box-sizing: border-box;
+        height: 520px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 0;
+        &:hover {
+            box-shadow: 0 0 0 2px rgba($green, .4) inset;
+            .swiper-slide__hover {
+                height: 233px;
+                opacity: 1;
+            }
+            &::after {
+                content: '';
+                background-color: rgba($white, .55);
+                width: calc(100% - 4px);
+                height: calc(100% - 4px);
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                border-radius: 2rem;
+                z-index: -1;
+            }
+        }
+        &_milk {
+            background-image: url(../images/milk.png);
+        }
+        &_pasta {
+            background-image: url(../images/pasta.png);
+        }
+        &_steaks {
+            background-image: url(../images/steaks.png);
+        }
         &__title {
             font-family: $font-cormorant;
             font-size: 3rem;
             color: $green;
-            margin-top: 22rem;
+            margin-bottom: 0;
         }
-        &_1 {
-            background-image: url(../images/milk.png);
-            background-size: cover;
-            background-repeat: no-repeat;
+        &__hover {
+            height: 0;
+            opacity: 0;
+        }
+        &__text {
+            color: rgba($green, .7);
+            line-height: 1.5;
+            margin-top: 2.5rem;
+            margin-bottom: 3.4rem;
+            max-width: 263px;
+        }
+        &__link {
+            text-transform: uppercase;
+            font-weight: 500;
+            color: $green;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            letter-spacing: 0.1rem;
+            opacity: .8;
+            &:hover {
+                opacity: 1;
+            }
+            &::before {
+                content: '';
+                display: block;
+                width: 3rem;
+                height: 3rem;
+                background-image: url(../images/plus.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
         }
     }
     &-pagination {
@@ -304,12 +369,40 @@ body {
     }
     &-button-next, &-button-prev {
         top: -60px;
-        &::after {
-            color: $green;
+        &:hover {
+            &::after {
+                color: rgba($green, 1);
+            }
         }
+        &::after {
+            color: rgba($green, .4);
+            font-size: 20px;
+        }
+    }
+    &-button-next {
+        right: -8px;
     }
     &-button-prev {
         left: initial;
         right: 100px;
+    }
+}
+
+.about {
+    &__box {
+        display: flex;
+        gap: 47rem;
+        padding: 67px 20px 200px 120px;
+    }
+    &__list {
+        display: flex;
+        padding-left: 0;
+        gap: 2rem;
+        list-style-type: none;
+    }
+    &__item {
+        font-family: $font-cormorant;
+        font-size: 3rem;
+        font-style: italic;
     }
 }
