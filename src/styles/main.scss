@@ -280,6 +280,7 @@ body {
 .slider {
     overflow: hidden;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .swiper {
@@ -440,6 +441,26 @@ body {
         font-size: 2.4rem;
         width: 46px;
         border: none;
+    }
+}
+
+.catalog {
+    &__menu {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        gap: 20px;
+    }
+    &__btn {
+        color: rgba($green, .4);
+        background-color: transparent;
+        padding: 25px 70px;
+        border: 1px solid rgba($green, .4);
+        border-radius: 35px;
+        &:hover {
+            color: $orange;
+            border: 1px solid $orange;
+        }
     }
 }
 
