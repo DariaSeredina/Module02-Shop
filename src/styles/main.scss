@@ -625,6 +625,75 @@ body {
     }
 }
 
+.delivery {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &__box {
+        display: flex;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        margin-top: 5.6rem;
+        margin-left: 12rem;
+        gap: 12%;
+    }
+    &__text {
+        flex-basis: 44%;
+    }
+    &__description {
+        margin-bottom: 2.6rem;
+    }
+    &__pay {
+        flex-basis: 37%;
+    }
+    &__link {
+        color: $green;
+        text-decoration: none;
+        position: relative;
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: #858881;
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 3px;
+        }
+    }
+    &__color {
+        color: $orange;
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+        gap: 3rem;
+        margin-top: 4.3rem;
+    }
+    &__item {
+        height: 32px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        opacity: .4;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__mastercard {
+        width: 53px;
+        background-image: url(../images/mastercard.svg);
+    }
+    &__visa {
+        width: 74px;
+        background-image: url(../images/visa.svg);
+    }
+    &__paypal {
+        width: 87px;
+        background-image: url(../images/paypal.svg);
+    }
+}
+
 .contact {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -632,10 +701,45 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-    &__text {
-        max-width: 400px;
-        flex-grow: 1;
+        &__text {
+            max-width: 400px;
+            flex-grow: 1;
+            margin-left: 12rem;
+        }
+        &__list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: 12rem;
+            font-size: 2.4rem;
+        }
+        &__link {
+            color: $green;
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            &::before {
+                content: '';
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 29px;
+                height: 38px;
+                display: block;
+            }
+        }
+        &__tel {
+            &::before {
+                background-image: url(../images/phone.svg);
+                background-size: 29px 25px;
+            }
+        }
+        &__mail {
+            &::before {
+                background-image: url(../images/mail.svg);
+                background-size: 29px 19px;
+            }
+        }
     }
     &__form {
         flex-basis: 589px;
