@@ -159,7 +159,7 @@ body {
         animation: shadow 5s linear infinite;
     }
     &__text {
-        padding-top: 4rem;
+        padding-top: 2rem;
     }
     &__btn {
         background-color: transparent;
@@ -168,6 +168,7 @@ body {
         position: absolute;
         color: $green;
         text-align: left;
+        line-height: 2.2rem;
         &:hover {
             &::before {
                 background-color: $orange;
@@ -185,27 +186,27 @@ body {
             transition: .2s;
         }
         &_1 {
-            top: 53px;
-            left: 80px;
+            top: 33px;
+            left: 60px;
             &::before {
-                bottom: 13px;
-                right: -24px;
+                bottom: 10px;
+                right: -36px;
             }
         }
         &_2 {
-            top: 200px;
-            right: 4px;
+            top: 181px;
+            right: 3px;
             &::before {
-                top: 12px;
+                top: 18px;
                 right: 88px;
             }
         }
         &_3 {
-            bottom: -42px;
-            right: 245px;
+            bottom: -38px;
+            right: 242px;
             &::before {
-                bottom: 52px;
-                right: 26px;
+                bottom: 55px;
+                right: 32px;;
             }
         }
     }
@@ -215,36 +216,36 @@ body {
     }
     &__tomato {
         position: absolute;
-        bottom: 123px;
-        npmnright: 80px;
+        bottom: 124px;
+        right: 142px;
         width: 11rem;
         z-index: -1;
     }
     &__avocado {
         position: absolute;
-        top: 52px;
-        right: -39px;
+        top: 48px;
+        right: 18px;
         width: 17.8rem;
         z-index: -1;
     }
     &__cucumber {
         position: absolute;
         top: 0;
-        left: 651px;
+        left: 711px;
         width: 8.4rem;
         z-index: -1;
     }
     &__pepper {
         position: absolute;
-        top: 401px;
-        left: -2px;
+        top: 400px;
+        left: 58px;
         width: 8.6rem;
         z-index: -1;
     }
     &__beans {
         position: absolute;
-        bottom: 168px;
-        left: -39px;
+        bottom: 173px;
+        left: 22px;
         width: 10.5rem;
         z-index: -1;
     }
@@ -255,6 +256,7 @@ body {
     font-weight: 700;
     font-size: 8rem;
     margin: 0;
+    line-height: 7.9rem;
     &__span {
         font-style: italic;
     }
@@ -298,8 +300,8 @@ body {
 }
 
 .offer {
-    padding-top: 2rem;
-    padding-bottom: 12.8rem;
+    padding-top: 1rem;
+    padding-bottom: 7.8rem;
     &__text {
         margin-top: 6rem;
         max-width: 700px;
@@ -308,7 +310,7 @@ body {
 
 .slider {
     overflow: hidden;
-    padding-top: 100px;
+    padding-top: 86px;
     padding-bottom: 100px;
 }
 
@@ -381,9 +383,6 @@ body {
             font-weight: 500;
             color: $green;
             text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
             letter-spacing: 0.1rem;
             opacity: .8;
             &:hover {
@@ -451,14 +450,13 @@ body {
     }
     &-button-prev {
         left: initial;
-        right: 100px;
+        right: 73px;
     }
 }
 
 .counter {
     display: flex;
     &__btn {
-        cursor: pointer;
         width: 50px;
         height: 50px;
         border: 1px solid $green;
@@ -554,18 +552,40 @@ body {
 }
 
 .trends {
+    margin-top: 19.4rem;
     &__text {
         margin-top: 4rem;
     }
 }
 
 .catalog {
+    margin-top: 9rem;
     &__list {
         margin-top: 8.5rem;
         margin-bottom: 5rem;
     }
     &__btn {
-
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: $green;
+        opacity: .8;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0;
+        margin: 5rem auto;
+        &::before {
+            content: '';
+            display: block;
+            width: 2.5rem;
+            height: 2.5rem;
+            background-image: url(../images/refresh.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
     }
 }
 
@@ -721,8 +741,8 @@ body {
 }
 
 .contact {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 71px;
+    padding-bottom: 147px;
     &-box {
         display: flex;
         align-items: center;
@@ -730,13 +750,17 @@ body {
         &__text {
             max-width: 400px;
             flex-grow: 1;
+            font-size: 1.8rem;
+            line-height: 2.7rem;
             margin-left: 12rem;
+            margin-top: 6rem;
         }
         &__list {
             list-style-type: none;
             padding-left: 0;
             margin-left: 12rem;
             font-size: 2.4rem;
+            margin-top: 5.5rem;
         }
         &__link {
             color: $green;
@@ -774,14 +798,16 @@ body {
 
 .card {
     border: 2px solid rgba($green, .4);
-    padding: 3.2rem 5.8rem 4rem;
+    padding: 4.2rem 4.2rem 4rem;
     border-radius: 2rem;
+    width: 500px;
     &__title {
+        font-weight: 700;
         font-size: 3rem;
         font-family: $font-cormorant;
         margin-top: 0;
     }
-    &__label {
+    &__lable {
         font-size: 1.2rem;
         margin-bottom: 1rem;
         display: block;
