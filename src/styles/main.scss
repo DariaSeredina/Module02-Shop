@@ -156,7 +156,7 @@ body {
             opacity: .8;
             transition: .2s;
         }
-        &::hover {
+        &:hover {
             opacity: 1;
         }
     }
@@ -175,7 +175,11 @@ body {
             border: 1px solid $green;
             padding: 0;
             opacity: .8;
+            cursor: pointer;
             transition: .2s;
+        }
+        &:hover {
+            opacity: 1;
         }
     }
 }
@@ -205,6 +209,12 @@ body {
     position: relative;
     padding-bottom: 187px;
     z-index: 0;
+    @media (max-width: $r_desk_1120) {
+        padding-bottom: 150px;
+    }
+    @media (max-width: $r_tab) {
+        padding-bottom: 0;
+    }
     &__item {
         margin-left: 12rem;
         max-width: 378px;
@@ -218,7 +228,6 @@ body {
         @media (max-width: $r_tab) {
             max-width: 100%;
             margin-left: 0;
-            margin-top: 3rem;
         }
     }
     &__link {
@@ -386,7 +395,7 @@ body {
     }
     &__tomato {
         position: absolute;
-        bottom: 124px;
+        bottom: 113px;
         right: 0;
         width: 11rem;
         z-index: -1;
@@ -568,6 +577,9 @@ body {
         }
         &_steaks {
             background-image: url(../images/steaks.png);
+            @media (max-width: $r_desk) {
+                background-size: cover;
+            }
         }
         &__title {
             font-family: $font-cormorant;
@@ -587,6 +599,9 @@ body {
             max-width: 263px;
         }
         &__link {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
             text-transform: uppercase;
             font-weight: 500;
             color: $green;
@@ -728,15 +743,22 @@ body {
         justify-content: space-between;
         align-items: center;
         margin-top: 7rem;
+        @media (max-width: $r_tab) {
+            flex-direction: column;
+        }
     }
     &__text {
         margin-left: 12rem;
         flex-basis: 620px;
         @media (max-width: $r_desk_1280) {
             margin-left: 8rem;
+            flex-basis: 550px;
         }
         @media (max-width: $r_desk_1120) {
             margin-left: 4rem;
+        }
+        @media (max-width: $r_tab) {
+            flex-basis: 15nprem;
         }
     }
     &__list {
@@ -748,6 +770,9 @@ body {
         font-size: 3rem;
         margin: 0;
         padding-left: 0;
+        @media (max-width: $r_desk_1280) {
+            gap: 6rem;
+        }
     }
     &__item {
         display: flex;
@@ -1060,7 +1085,7 @@ body {
             outline: none;
         }
         &:invalid {
-            border: #red;
+            border: #8B0000;
         }
     }
     &__check {
