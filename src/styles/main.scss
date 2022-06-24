@@ -344,7 +344,7 @@ body {
         }
         &_1 {
             top: 33px;
-            left: 60px;
+            left: 76px;
             @media (max-width: $r_desk_hd) {
                 top: 39px;
                 left: 24px;
@@ -359,7 +359,7 @@ body {
         }
         &_2 {
             top: 181px;
-            right: 3px;
+            right: 8px;
             @media (max-width: $r_desk_1350) {
                 top: 109px;
             }
@@ -375,7 +375,7 @@ body {
             }
         }
         &_3 {
-            bottom: -38px;
+            bottom: -47px;
             right: 242px;
             @media (max-width: $r_desk_1350) {
                 bottom: -59px;
@@ -493,6 +493,9 @@ body {
     border: none;
     cursor: pointer;
     transition: .2s;
+    @media (max-width: $r_desk_1350) {
+        padding: 2rem 3.3rem;
+    }
     @media (max-width: $r_desk_1280) {
         font-size: 1.4rem;
     }
