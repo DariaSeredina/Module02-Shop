@@ -430,6 +430,12 @@ body {
         right: 0;
         width: 11rem;
         z-index: -1;
+        @media (max-width: $r_mob_500) {
+            bottom: inherit;
+            top: 82px;
+            right: inherit;
+            left: -14px;
+        }
     }
     &__avocado {
         position: absolute;
@@ -442,6 +448,10 @@ body {
             width: 9.8rem;
             right: -50px;
         }
+        @media (max-width: $r_mob_500) {
+            top: 88px;
+            right: -38px;
+        }
     }
     &__cucumber {
         position: absolute;
@@ -449,6 +459,14 @@ body {
         left: 34%;
         width: 8.4rem;
         z-index: -1;
+        @media (max-width: $r_mob_500) {
+            transform: rotate(90deg);
+            width: 6.5rem;
+            top: inherit;
+            left: inherit;
+            right: -15px;
+            bottom: 216px;
+        }
     }
     &__pepper {
         position: absolute;
@@ -459,6 +477,12 @@ body {
         @media (max-width: $r_desk_full_1750) {
             display: none;
         }
+        @media (max-width: $r_mob_500) {
+            display: block;
+            top: 352px;
+            left: -4px;
+            width: 4.6rem;
+        }
     }
     &__beans {
         position: absolute;
@@ -466,6 +490,9 @@ body {
         left: 0;
         width: 10.5rem;
         z-index: -1;
+        @media (max-width: $r_mob_500) {
+            display: none;
+        }
     }
 }
 .title {
@@ -562,6 +589,10 @@ body {
         padding-top: 5.4rem;
         padding-bottom: 6rem;
     }
+    @media (max-width: $r_mob_500) {
+        max-width: 210px;
+        padding-bottom: 7rem;
+    }
 }
 
 .swiper {
@@ -585,10 +616,18 @@ body {
             @media (max-width: $r_desk_hd) {
                 height: 400px;
             }
+            @media (max-width: $r_mob_500) {
+                height: 240px;
+                text-align: center;
+                padding: 2.2rem 1.7rem;
+            }
             &:hover {
                 .swiper-slide__hover {
                     height: 233px;
                     opacity: 1;
+                    @media (max-width: $r_mob_500) {
+                        height: auto;
+                    }
                 }
                 &::after {
                     content: '';
@@ -623,10 +662,19 @@ body {
             font-size: 3rem;
             color: $green;
             margin-bottom: 0;
+            @media (max-width: $r_mob_500) {
+                font-size: 1.75rem;
+                margin-top: 0;
+                margin-bottom: 2rem;
+            }
         }
         &__hover {
             height: 0;
             opacity: 0;
+            @media (max-width: $r_mob_500) {
+                height: auto;
+                opacity: 1;
+            }
         }
         &__text {
             color: rgba($green, .7);
@@ -634,6 +682,9 @@ body {
             margin-top: 2.5rem;
             margin-bottom: 3.4rem;
             max-width: 263px;
+            @media (max-width: $r_mob_500) {
+                display: none;
+            }
         }
         &__link {
             display: flex;
@@ -645,6 +696,11 @@ body {
             text-decoration: none;
             letter-spacing: 0.1rem;
             opacity: .8;
+            @media (max-width: $r_mob_500) {
+                font-size: 1.25rem;
+                justify-content: center;
+                gap: 9px;
+            }
             &:hover {
                 opacity: 1;
             }
@@ -656,6 +712,10 @@ body {
                 background-image: url(../images/plus.svg);
                 background-size: cover;
                 background-repeat: no-repeat;
+            }
+            @media (max-width: $r_mob_500) {
+                width: 2.5rem;
+                height: 2.5rem;
             }
         }
         &__cover {
