@@ -560,6 +560,9 @@ body {
     @media (max-width: $r_desk_1280) {
         font-size: 1.4rem;
     }
+    @media (max-width: $r_mob_360) {
+        padding: 2rem 3.5rem;
+    }
     &:hover {
         background-color: $dark-orange;
     }
@@ -1228,6 +1231,18 @@ body {
                 align-items: center;
             }
         }
+        &__item {
+            margin-bottom: 2rem;
+            @media (max-width: $r_mob_360) {
+                margin-bottom: 3.5rem;
+            }
+            @media (max-width: 330px) {
+                margin-bottom: 1.5rem;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
         &__link {
             color: $green;
             text-decoration: none;
@@ -1259,6 +1274,13 @@ body {
     }
     &__form {
         flex-basis: 589px;
+        @media (max-width: $r_desk_hd) {
+            flex-basis: auto;
+            flex-grow: 1;
+        }
+        @media (max-width: 330px) {
+            margin-top: 5.7rem;
+        }
     }
 }
 
@@ -1278,6 +1300,12 @@ body {
         margin-bottom: 1rem;
         display: block;
         margin-left: .6rem;
+        @media (max-width: $r_mob_500) {
+            text-align: left;
+        }
+        @media (max-width: $r_mob_360) {
+            margin-bottom: 0.6rem;
+        }
     }
     &__input {
         border: 2px solid rgba($green, .4);
@@ -1305,6 +1333,9 @@ body {
     }
     &__link {
         margin-top: 1.2rem;
+        @media (max-width: $r_mob_360) {
+            margin-top: 2rem;
+        }
     }
     &__docs {
         color: rgba($green, .6);
@@ -1379,6 +1410,14 @@ footer {
     padding-left: 0;
     margin-top: 3rem;
     margin-bottom: 0;
+    @media (max-width: $r_tab) {
+        max-width: 230px;
+        margin: 3rem auto 0;
+    }
+    @media (max-width: $r_mob_500) {
+        max-width: 210px;
+        margin: 5rem auto 0;
+    }
     &__link {
         display: block;
         width: 4.6rem;
@@ -1389,6 +1428,10 @@ footer {
         background-position: center;
         opacity: .8;
         transition: .2s;
+        @media (max-width: $r_mob_500) {
+            width: 5.6rem;
+            height: 5.6rem;
+        }
         &:hover {
             opacity: 1;
         }
@@ -1396,14 +1439,23 @@ footer {
     &__vk {
         background-image: url(../images/vk.svg);
         background-size: 2.3rem;
+        @media (max-width: $r_mob_500) {
+            background-size: 2.6rem;
+        }
     }
     &__inst {
         background-image: url(../images/inst.svg);
         background-size: 1.8rem;
+        @media (max-width: $r_mob_500) {
+            background-size: 2.6rem;
+        }
     }
     &__fb {
         background-image: url(../images/fb.svg);
         background-size: 1.8rem;
+        @media (max-width: $r_mob_500) {
+            background-size: 2.6rem;
+        }
     }
 }
 
