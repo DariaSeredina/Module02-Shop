@@ -921,7 +921,7 @@ body {
 }
 
 .trends {
-    padding-top: 4rem;
+    padding-top: 19.6rem;
     padding-bottom: 8rem;
     &__text {
         margin-top: 4rem;
@@ -929,8 +929,8 @@ body {
 }
 
 .catalog {
-    padding-top: 11rem;
-    padding-bottom: 14rem;
+    padding-top: 0.5rem;
+    padding-bottom: 10rem;
     @media (max-width: $r_tab) {
         padding-bottom: 8rem;;
     }
@@ -951,10 +951,13 @@ body {
         gap: 1.5rem;
         padding: 0;
         margin: 5rem auto;
+        &:hover {
+            opacity: 1;
+        }
         &::before {
             content: '';
             display: block;
-            width: 2.5rem;
+            width: 2.6rem;
             height: 2.5rem;
             background-image: url(../images/refresh.svg);
             background-size: cover;
@@ -1081,6 +1084,7 @@ body {
         max-width: 351px;
         height: 100%;
         object-fit: contain;
+        margin: auto;
     }
     &__title {
         font-family: $font-cormorant;
@@ -1120,8 +1124,7 @@ body {
 }
 
 .delivery {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 10rem;
     &__box {
         display: flex;
         font-size: 1.8rem;
@@ -1192,7 +1195,7 @@ body {
 }
 
 .contact {
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-bottom: 16rem;
     @media (max-width: $r_tab) {
         padding-top: 4rem;
@@ -1250,6 +1253,9 @@ body {
             display: flex;
             align-items: center;
             gap: 3rem;
+            &:hover {
+                color: $orange;
+            }
             &::before {
                 content: '';
                 background-repeat: no-repeat;
@@ -1346,7 +1352,7 @@ body {
 
 footer {
     border-top: 1px solid #d4d6cf;
-    padding-top: 7.9rem;
+    padding-top: 5.9rem;
     padding-bottom: 7rem;
 }
 
