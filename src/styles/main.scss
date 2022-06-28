@@ -574,6 +574,10 @@ body {
     @media (max-width: $r_desk_1280) {
         font-size: 1.4rem;
     }
+    @media (max-width: $r_mob_500) {
+        padding: 1.6rem 3.2rem;
+        margin: 0 auto;
+    }
     @media (max-width: $r_mob_360) {
         padding: 2rem 3.5rem;
     }
@@ -696,9 +700,12 @@ body {
             font-size: 3rem;
             color: $green;
             margin-bottom: 0;
+            @media (max-width: $r_desk_hd) {
+                margin-top: 0;
+            }
             @media (max-width: $r_mob_500) {
                 font-size: 1.75rem;
-                margin-top: 0;
+                margin-top: 2rem;
                 margin-bottom: 2rem;
             }
         }
@@ -759,6 +766,12 @@ body {
             width: 100%;
             height: 322px;
             text-align: center;
+            @media (max-width: $r_desk_1280) {
+                height: 300px;
+            }
+            @media (max-width: $r_mob_500) {
+                height: 73px;
+            }
         }
         &__image {
             width: 100%;
@@ -774,10 +787,23 @@ body {
             min-height: 55px;
             max-width: 300px;
             line-height: 1.5;
+            @media (max-width: $r_desk_hd) {
+                max-width: initial;
+            }
+            @media (max-width: $r_mob_500) {
+                margin-top: 0;
+                font-size: 1.4rem;
+            }
         }
         &__price {
             font-size: 2.4rem;
             margin-bottom: 3rem;
+            @media (max-width: $r_desk_hd) {
+                margin-top: 0;
+            }
+            @media (max-width: $r_mob_500) {
+                font-size: 1.8rem;
+            }
         }
         &__footer {
             display: flex;
@@ -831,6 +857,9 @@ body {
 
 .counter {
     display: flex;
+    @media (max-width: $r_mob_500) {
+        display: none;
+    }
     &__btn {
         width: 50px;
         height: 50px;
@@ -839,6 +868,10 @@ body {
         padding: 0;
         background-position: center center;
         border-radius: 100%;
+        @media (max-width: $r_desk_1280) {
+            width: 45px;
+            height: 45px;
+        }
         &_min {
             width: 40px;
             height: 40px;
@@ -850,12 +883,18 @@ body {
         background-size: 20px;
         background-repeat: no-repeat;
         opacity: .4;
+        @media (max-width: $r_desk_1280) {
+            background-size: 18px;
+        }
     }
     &__plus {
-        pointer-events: none;
+        cursor: pointer;
         background-image: url(../images/plus-counter.svg);
         background-size: 20px;
         background-repeat: no-repeat;
+        @media (max-width: $r_desk_1280) {
+            background-size: 18px;
+        }
     }
     &__input {
         text-align: center;
@@ -864,6 +903,9 @@ body {
         border: none;
         &_min {
             width: 33px;
+        }
+        @media (max-width: $r_desk_1280) {
+            width: 36px;
         }
     }
 }
@@ -958,6 +1000,9 @@ body {
 .trends {
     padding-top: 19.6rem;
     padding-bottom: 8rem;
+    @media (max-width: $r_tab) {
+        padding-top: 8rem;
+    }
     @media (max-width: $r_mob_360) {
         padding-top: 8rem;
     }
