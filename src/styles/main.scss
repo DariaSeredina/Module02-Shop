@@ -213,12 +213,12 @@ body {
         align-items: center;
         gap: 15px;
         position: absolute;
-        right: -70px;
-        bottom: -130px;
+        right: -45px;
+        bottom: -124px;
         border-radius: 30px;
         background-color: $white;
         width: 280px;
-        padding: 20px 30px;
+        padding: 12px 27px;
         z-index: 1;
         box-shadow: 0 0 33px 0 rgba($green, .3);
         box-sizing: border-box;
@@ -228,7 +228,7 @@ body {
             border-bottom: 17px solid $white;
             position: absolute;
             top: -25px;
-            right: 80px;
+            right: 55px;
         }
     }
     &__cover {
