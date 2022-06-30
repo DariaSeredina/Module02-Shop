@@ -817,7 +817,7 @@ body {
             @media (max-width: $r_mob_500) {
                 font-size: 1.75rem;
                 margin-top: 2rem;
-                margin-bottom: 2rem;
+                margin-bottom: 1rem;
             }
         }
         &__hover {
@@ -826,7 +826,7 @@ body {
             @media (max-width: $r_mob_500) {
                 height: auto;
                 opacity: 1;
-                margin-bottom: -3px;
+                margin: 0 auto;
             }
         }
         &__text {
@@ -865,10 +865,10 @@ body {
                 background-image: url(../images/plus.svg);
                 background-size: cover;
                 background-repeat: no-repeat;
-            }
-            @media (max-width: $r_mob_500) {
-                width: 2.5rem;
-                height: 2.5rem;
+                @media (max-width: $r_mob_500) {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
             }
         }
         &__cover {
@@ -1122,6 +1122,15 @@ body {
         @media (max-width: $r_mob_500) {
             margin-bottom: 4rem;
         }
+        @media (max-width: $r_mob_360) {
+            margin-top: 3rem;
+            margin-bottom: 0;
+        }
+        &_catalog {
+            @media (max-width: $r_mob_360) {
+                margin-bottom: 7rem;
+            }
+        }
     }
 }
 
@@ -1226,6 +1235,9 @@ body {
         display: block;
         text-align: center;
         margin-bottom: 2rem;
+    }
+    @media (max-width: $r_mob_360) {
+        margin-bottom: 4rem;
     }
     &__link {
         padding: 2.4rem 0;
