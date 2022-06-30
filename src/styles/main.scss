@@ -627,12 +627,18 @@ body {
     @media (max-width: $r_minmob) {
         font-size: 5rem;
     }
+    @media (max-width: $r_mob_360) {
+        font-size: 4rem;
+    }
     &__span {
         font-style: italic;
     }
     &_block {
         .title__span {
             display: block;
+            @media (max-width: $r_mob_360) {
+                margin: -4rem;
+            }
         }
     }
 }
@@ -698,6 +704,10 @@ body {
         box-shadow: 0px 1rem 1.1rem .17rem rgba(207, 92, 13, 0.15);
         @media (max-width: $r_tab) {
             padding: 1.8rem;
+        }
+        @media (max-width: $r_mob_360) {
+            padding: 1.8rem 4rem;
+            font-size: 1.2rem;
         }
     }
 }
@@ -1032,7 +1042,7 @@ body {
             flex-direction: column;
         }
         @media (max-width: $r_mob_360) {
-            margin-top: 4rem;
+            margin-top: 5rem;
         }
     }
     &__text {
@@ -1050,6 +1060,7 @@ body {
         }
         @media (max-width: $r_mob_500) {
             margin-left: 0;
+            flex-basis: 17rem;
         }
     }
     &__list {
@@ -1065,7 +1076,8 @@ body {
             gap: 6rem;
         }
         @media (max-width: $r_mob_360) {
-            gap: 2rem;
+            gap: 4.5rem;
+            font-size: 1.8rem;
         }
     }
     &__item {
@@ -1085,6 +1097,10 @@ body {
             @media (max-width: $r_mob_500) {
                 width: 70px;
                 height: 70px;
+            }
+            @media (max-width: $r_mob_500) {
+                width: 60px;
+                height: 60px;
             }
         }
         &:nth-child(1) {
@@ -1115,7 +1131,7 @@ body {
         padding-top: 8rem;
     }
     @media (max-width: $r_mob_360) {
-        padding-top: 8rem;
+        padding-top: 4rem;
     }
     &__text {
         margin-top: 4rem;
@@ -1123,7 +1139,7 @@ body {
             margin-bottom: 4rem;
         }
         @media (max-width: $r_mob_360) {
-            margin-top: 3rem;
+            margin-top: 0rem;
             margin-bottom: 0;
         }
         &_catalog {
@@ -1165,7 +1181,7 @@ body {
         padding: 0;
         margin: 6rem auto;
         @media (max-width: $r_mob_360) {
-            margin: 0 auto;
+            margin: 4rem auto 0;
             font-size: 1.3rem;
         }
         &:hover {
@@ -1293,8 +1309,8 @@ body {
             padding: 2.2rem 2rem 2.8rem;
         }
         @media (max-width: $r_mob_360) {
-            height: 85%;
-            padding: 2.2rem 1.5rem 2.8rem;
+            height: 95%;
+            padding: 2.2rem 1rem 2.8rem;
         }
     }
     &__cover {
@@ -1345,6 +1361,7 @@ body {
         @media (max-width: $r_mob_360) {
             margin-top: 1rem;
             margin-bottom: -2rem;
+            text-align: center;
         }
     }
     &__price {
@@ -1356,6 +1373,8 @@ body {
         }
         @media (max-width: $r_mob_360) {
             margin-bottom: 2rem;
+            font-size: 1.5rem;
+            text-align: center;
         }
     }
     &__footer {
@@ -1476,7 +1495,7 @@ body {
             margin-top: 6rem;
             @media (max-width: $r_mob_360) {
                 max-width: 282px;
-                margin: 0 auto;
+                margin: 5.7rem auto 4.5rem;
                 text-align: center;
             }
         }
@@ -1607,6 +1626,9 @@ body {
         display: block;
         width: 97%;
         box-sizing: border-box;
+        @media (max-width: $r_mob_360) {
+            padding: 2rem 3rem;
+        }
         &:focus {
             border: 2px solid rgba($green, 1);
             outline: none;
@@ -1626,7 +1648,7 @@ body {
     &__link {
         margin-top: 1.2rem;
         @media (max-width: $r_mob_360) {
-            margin-top: 2rem;
+            margin: 0 3rem;
         }
     }
     &__docs {
