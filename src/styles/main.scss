@@ -497,9 +497,19 @@ body {
         box-shadow: 0 0 33px 0 rgb(39 48 15 / 30%);
         box-sizing: border-box;
         visibility: hidden;
+        &_1 {
+            left: -120px;
+            top: 100px;
+            padding: 25px 30px;
+        }
         &_2 {
             right: -100px;
             top: 253px;
+            padding: 25px 30px;
+        }
+        &_3 {
+            left: 200px;
+            bottom: -50px;
             padding: 25px 30px;
         }
     }
