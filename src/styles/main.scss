@@ -365,8 +365,8 @@ body {
         align-items: center;
         position: relative;
         @media (max-width: $r_desk_1350) {
-            flex-basis: 650px;
-            height: 650px;
+            flex-basis: 720px;
+            height: 700px;
         }
         @media (max-width: $r_desk_hd) {
             flex-basis: 600px;
@@ -391,8 +391,8 @@ body {
         justify-content: center;
         align-items: center;
         @media (max-width: $r_desk_1350) {
-            flex-basis: 600px;
-            height: 600px;
+            flex-basis: 640px;
+            height: 640px;
         }
         @media (max-width: $r_desk_hd) {
             border: 1px solid transparent;
@@ -460,8 +460,11 @@ body {
         &_1 {
             top: 33px;
             left: 76px;
+            @media (max-width: $r_desk_1350) {
+                top: 24px;
+            }
             @media (max-width: $r_desk_hd) {
-                top: 39px;
+                top: 33px;
                 left: 24px;
             }
             @media (max-width: $r_desk_1120) {
@@ -477,9 +480,11 @@ body {
             right: 8px;
             @media (max-width: $r_desk_1350) {
                 top: 109px;
+                right: 26px;
             }
             @media (max-width: $r_desk_hd) {
                 top: 58px;
+                right: 0;
             }
             @media (max-width: $r_desk_1120) {
                 display: none;
@@ -493,7 +498,10 @@ body {
             bottom: -47px;
             right: 242px;
             @media (max-width: $r_desk_1350) {
-                bottom: -59px;
+                bottom: -52px;
+            }
+            @media (max-width: $r_desk_hd) {
+                bottom: -60px;
             }
             @media (max-width: $r_desk_1120) {
                 display: none;
@@ -670,6 +678,10 @@ body {
         @media (max-width: $r_desk_1280) {
             font-size: 1.6rem;
         }
+        @media (max-width: $r_tab) {
+            max-width: 85%;
+            margin: 0 auto;
+        }
         @media (max-width: $r_mob_360) {
             font-size: 1.5rem;
             max-width: 278px;
@@ -681,12 +693,15 @@ body {
         @media (max-width: $r_desk_1280) {
             font-size: 2.2rem;
         }
-        @media (max-width: $r_mob_500) {
-            font-size: 2rem;
-            max-width: 78%;
+        @media (max-width: $r_tab) {
+            font-size: 1.8rem;
+            max-width: 85%;
             margin: 0 auto;
         }
         @media (max-width: $r_mob_500) {
+            max-width: 78%;
+        }
+        @media (max-width: $r_mob_360) {
             font-size: 1.5rem;;
         }
     }
@@ -1069,6 +1084,9 @@ body {
         justify-content: space-between;
         align-items: center;
         margin-top: 7rem;
+        @media (max-width: $r_desk) {
+            margin-top: 5rem;
+        }
         @media (max-width: $r_tab) {
             flex-direction: column;
         }
@@ -1088,6 +1106,7 @@ body {
         }
         @media (max-width: $r_tab) {
             flex-basis: 15rem;
+            margin: 0 auto;
         }
         @media (max-width: $r_mob_500) {
             margin-left: 0;
@@ -1105,6 +1124,16 @@ body {
         padding-left: 0;
         @media (max-width: $r_desk_1280) {
             gap: 6rem;
+        }
+        @media (max-width: $r_desk_hd) {
+            gap: 4rem;
+        }
+        @media (max-width: $r_desk_1120) {
+            gap: 6rem;
+        }
+        @media (max-width: $r_desk) {
+            gap: 2rem;
+            font-size: 2.5rem;
         }
         @media (max-width: $r_mob_360) {
             gap: 4.5rem;
