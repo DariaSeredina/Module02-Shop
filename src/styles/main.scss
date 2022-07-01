@@ -1497,6 +1497,9 @@ body {
         margin-top: 5.6rem;
         margin-left: 12rem;
         gap: 12%;
+        @media (max-width: $r_tab) {
+            margin-left: 5rem;
+        }
         @media (max-width: $r_mob_360) {
             display: block;
             margin: 0 auto;
