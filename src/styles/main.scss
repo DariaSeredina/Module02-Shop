@@ -47,6 +47,9 @@ body {
     @media (max-width: $r_desk_1280) {
         gap: 3%;
     }
+    @media (max-width: $r_mob_360) {
+        margin: 0 auto;
+    }
     &__navigation {
         flex-grow: 1;
         margin-left: 4.5rem;
@@ -320,6 +323,10 @@ body {
         @media (max-width: $r_mob_500) {
             margin-top: 3rem;
         }
+        @media (max-width: $r_mob_360) {
+            margin-top: 4.4rem;
+        }
+
     }
     &__link {
         margin-top: 5.3rem;
@@ -328,6 +335,9 @@ body {
         }
         @media (max-width: $r_mob_500) {
             margin-top: 4rem;
+        }
+        @media (max-width: $r_mob_360) {
+            margin-top: 2rem;
         }
     }
     &__flex {
@@ -338,6 +348,10 @@ body {
         @media (max-width: $r_desk_1120) {
             padding-top: 3rem;
             padding-bottom: 9rem;
+        }
+        @media (max-width: $r_mob_360) {
+            padding-top: 2rem;
+            padding-bottom: 4rem;
         }
     }
     &__cover {
@@ -403,6 +417,9 @@ body {
         }
         @media (max-width: $r_mob_500) {
             max-width: 220px;
+        }
+        @media (max-width: $r_mob_360) {
+            margin-top: 5rem;
         }
     }
     &__text {
@@ -655,6 +672,8 @@ body {
         }
         @media (max-width: $r_mob_360) {
             font-size: 1.5rem;
+            max-width: 278px;
+            margin: 0 auto;
         }
     }
     &_size-m {
@@ -666,6 +685,9 @@ body {
             font-size: 2rem;
             max-width: 78%;
             margin: 0 auto;
+        }
+        @media (max-width: $r_mob_500) {
+            font-size: 1.5rem;;
         }
     }
 }
@@ -718,9 +740,15 @@ body {
     @media (max-width: $r_tab) {
         padding-bottom: 4rem;
     }
+    @media (max-width: $r_mob_360) {
+        padding-bottom: 2.8rem;
+    }
     &__text {
         margin-top: 6rem;
         max-width: 700px;
+        @media (max-width: $r_mob_360) {
+            margin-top: 5rem;
+        }
     }
 }
 
@@ -966,6 +994,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: $r_mob_360) {
+        bottom: -40px;
+    }
 }
 .swiper-pagination-bullet-active {
     background: $orange;
