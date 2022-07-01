@@ -739,12 +739,27 @@ body {
         font-size: 1.4rem;
         padding: 2rem 3.4rem;
         box-shadow: 0px 1rem 1.1rem .17rem rgba(207, 92, 13, 0.15);
+        @media (max-width: 1440px) {
+            padding: 2rem 3rem;
+        }
+        @media (max-width: $r_desk_1280) {
+            padding: 2rem 5rem;
+        }
+        @media (max-width: $r_desk_hd) {
+            padding: 2rem 2.5rem;
+        }
         @media (max-width: $r_tab) {
             padding: 1.8rem;
         }
+        @media (max-width: 667px) {
+            font-size: 1.2rem;
+            padding: 1rem;
+        }
         @media (max-width: $r_mob_360) {
             padding: 1.8rem 4rem;
-            font-size: 1.2rem;
+        }
+        @media (max-width: 330px) {
+            padding: 1.8rem 3.5rem;
         }
     }
 }
@@ -1042,6 +1057,14 @@ body {
         &_min {
             width: 40px;
             height: 40px;
+            @media (max-width: 1440px) {
+                width: 35px;
+                height: 35px;
+            }
+            @media (max-width: 667px) {
+                width: 30px;
+                height: 30px;
+            }
         }
     }
     &__minus {
@@ -1053,6 +1076,9 @@ body {
         @media (max-width: $r_desk_1280) {
             background-size: 18px;
         }
+        @media (max-width: 667px) {
+            background-size: 13px;
+        }
     }
     &__plus {
         cursor: pointer;
@@ -1061,6 +1087,9 @@ body {
         background-repeat: no-repeat;
         @media (max-width: $r_desk_1280) {
             background-size: 18px;
+        }
+        @media (max-width: 667px) {
+            background-size: 13px;
         }
     }
     &__input {
@@ -1073,6 +1102,9 @@ body {
         }
         @media (max-width: $r_desk_1280) {
             width: 36px;
+        }
+        @media (max-width: 667px) {
+            width: 25px;
         }
     }
 }
@@ -1362,8 +1394,11 @@ body {
         &:hover {
             box-shadow: 0 0 0 2px rgba($green, .4) inset;
         }
+        @media (max-width: 1440px) {
+            padding: 2.7rem 2rem 3.8rem;
+        }
         @media (max-width: $r_desk_hd) {
-            padding: 2.7rem 5rem 3.8rem;
+            padding: 2.7rem 2rem 3.8rem;
         }
         @media (max-width: $r_tab) {
             padding: 2.2rem 2rem 2.8rem;
