@@ -1611,6 +1611,9 @@ body {
             line-height: 2.7rem;
             margin-left: 12rem;
             margin-top: 6rem;
+            @media (max-width: $r_desk_1120) {
+                margin-left: 0;
+            }
             @media (max-width: $r_mob_360) {
                 max-width: 282px;
                 margin: 5.7rem auto 4.5rem;
@@ -1624,6 +1627,9 @@ body {
             font-size: 2.4rem;
             margin-top: 5.5rem;
             margin-bottom: 0;
+            @media (max-width: $r_desk_1120) {
+                margin-left: 0;
+            }
             @media (max-width: $r_tab) {
                 font-size: 1.6rem;
                 display: flex;
@@ -1709,8 +1715,14 @@ body {
     padding: 3rem 4.2rem;
     border-radius: 2rem;
     width: 500px;
-    @media (max-width: $r_desk_1120) {
+    @media (max-width: $r_desk_hd) {
         padding: 3rem 2.2rem;
+    }
+    @media (max-width: $r_desk) {
+        width: 400px;
+    }
+    @media (max-width: $r_tab_900) {
+        width: 350px;
     }
     @media (max-width: $r_mob_360) {
         padding: 2rem 3.2rem;
@@ -1747,6 +1759,9 @@ body {
         display: block;
         width: 97%;
         box-sizing: border-box;
+        @media (max-width: $r_tab_900) {
+            padding: 1.8rem 3rem;
+        }
         @media (max-width: $r_mob_360) {
             padding: 2rem 3rem;
         }
