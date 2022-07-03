@@ -889,6 +889,7 @@ body {
         background-position: right;
         background-size: auto;
         position: relative;
+        overflow: hidden;
         z-index: 0;
         @media (max-width: $r_mob_500) {
             text-align: center;
@@ -971,6 +972,7 @@ body {
         &__hover {
             height: 0;
             opacity: 0;
+            transition: 0.5s;
             @media (max-width: $r_mob_500) {
                 height: auto;
                 opacity: 1;
@@ -981,7 +983,7 @@ body {
             color: rgba($green, .7);
             line-height: 1.5;
             margin-top: 2.5rem;
-            margin-bottom: 3.4rem;
+            margin-bottom: 2.4rem;
             max-width: 263px;
             @media (max-width: $r_mob_500) {
                 display: none;
