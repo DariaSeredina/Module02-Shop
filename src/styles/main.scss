@@ -238,6 +238,16 @@ body {
             border-radius: 25px;
             padding: 5px 16px;
         }
+        @media (max-width: $r_mob_500) {
+            bottom: -80px;
+            width: 182px;
+            border-radius: 20px;
+        }
+        @media (max-width: $r_mob_360) {
+            bottom: -76px;
+            width: 153px;
+            padding: 2px 18px;
+        }
         &_text {
             @media (max-width: $r_desk_hd) {
                 font-size: 1.2rem;
@@ -255,6 +265,10 @@ body {
             }
             @media (max-width: $r_desk_hd) {
                 right: 28px;
+            }
+            @media (max-width: $r_mob_360) {
+                right: 24px;
+                top: -21px;
             }
         }
     }
@@ -303,6 +317,11 @@ body {
             height: 1.2rem;
             top: 1rem;
             right: 1.5rem;
+        }
+        @media (max-width: $r_mob_500) {
+            width: 1rem;
+            height: 1.5rem;
+            right: 1.4rem;
         }
 }
 .logo {
@@ -575,6 +594,10 @@ body {
         &_1 {
             left: -120px;
             top: 100px;
+            @media (max-width: $r_desk_hd) {
+                left: -94px;
+                top: 92px;
+            }
         }
         &_2 {
             right: -100px;
@@ -582,10 +605,17 @@ body {
             @media (max-width: 1500px) {
                 right: -4px;
             }
+            @media (max-width: $r_desk_hd) {
+                top: 118px;
+            }
         }
         &_3 {
             left: 200px;
             bottom: -50px;
+            @media (max-width: $r_desk_hd) {
+                left: 97px;
+                bottom: -73px;
+            }
         }
     }
     &__title {
