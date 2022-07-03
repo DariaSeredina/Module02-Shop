@@ -347,7 +347,7 @@ body {
         }
         @media (max-width: $r_mob_360) {
             width: 117px;
-            margin: 0 auto 3rem;
+            margin: 0 auto 3.5rem;
         }
     }
 }
@@ -401,7 +401,7 @@ body {
             margin-top: 4rem;
         }
         @media (max-width: $r_mob_360) {
-            margin-top: 2rem;
+            margin-top: 4.5rem;
         }
     }
     &__flex {
@@ -1608,7 +1608,7 @@ body {
     &__pay {
         flex-basis: 37%;
         @media (max-width: $r_tab) {
-            margin-top: 4rem;
+            margin-top: -2rem;
         }
     }
     &__link {
@@ -1887,7 +1887,7 @@ form {
 
 footer {
     border-top: 1px solid #d4d6cf;
-    padding-top: 8.2rem;
+    padding-top: 5.4rem;
     padding-bottom: 7rem;
 }
 
@@ -1930,6 +1930,9 @@ footer {
         @media (max-width: $r_tab) {
             margin: 0 auto 3rem;
         }
+        @media (max-width: $r_mob_360) {
+            margin: 1.7rem auto;
+        }
         &_flex {
             @media (max-width: $r_tab) {
                 display: flex;
@@ -1946,7 +1949,7 @@ footer {
         }
     }
     &__item {
-        margin-bottom: 2.6rem;
+        margin-bottom: 1.2rem;
         &:last-child {
             margin-bottom: 0;
         }
@@ -1984,6 +1987,7 @@ footer {
         @media (max-width: $r_mob_360) {
             display: block;
             text-align: center;
+            font-size: 1rem;
         }
     }
     &__author {
