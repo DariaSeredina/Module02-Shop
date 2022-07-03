@@ -228,6 +228,21 @@ body {
         z-index: 1;
         box-shadow: 0 0 33px 0 rgba($green, .3);
         box-sizing: border-box;
+        @media (max-width: 1500px) {
+            right: -5px;
+        }
+        @media (max-width: $r_desk_hd) {
+            gap: 10px;
+            bottom: -90px;
+            width: 225px;
+            border-radius: 25px;
+            padding: 5px 16px;
+        }
+        &_text {
+            @media (max-width: $r_desk_hd) {
+                font-size: 1.2rem;
+            }
+        }
         &::after {
             content: '';
             border: 9px solid transparent;
@@ -235,6 +250,12 @@ body {
             position: absolute;
             top: -25px;
             right: 55px;
+            @media (max-width: 1500px) {
+                right: 37px;
+            }
+            @media (max-width: $r_desk_hd) {
+                right: 28px;
+            }
         }
     }
     &__cover {
@@ -251,6 +272,11 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         object-fit: cover;
+        &_dropdown {
+            @media (max-width: $r_desk_hd) {
+                height: 5rem;
+            }
+        }
     }
     &__product {
         display: inline-block;
@@ -272,6 +298,12 @@ body {
         top: 1.5rem;
         right: 1.5rem;
         cursor: pointer;
+        @media (max-width: $r_desk_hd) {
+            width: 1.2rem;
+            height: 1.2rem;
+            top: 1rem;
+            right: 1.5rem;
+        }
 }
 .logo {
     display: block;
@@ -535,20 +567,25 @@ body {
         box-shadow: 0 0 33px 0 rgb(39 48 15 / 30%);
         box-sizing: border-box;
         visibility: hidden;
+        @media (max-width: $r_desk_hd) {
+            width: 193px;
+            border-radius: 25px;
+            padding: 12px 22px;
+        }
         &_1 {
             left: -120px;
             top: 100px;
-            padding: 25px 30px;
         }
         &_2 {
             right: -100px;
             top: 253px;
-            padding: 25px 30px;
+            @media (max-width: 1500px) {
+                right: -4px;
+            }
         }
         &_3 {
             left: 200px;
             bottom: -50px;
-            padding: 25px 30px;
         }
     }
     &__title {
