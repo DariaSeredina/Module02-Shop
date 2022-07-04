@@ -25,6 +25,7 @@ $r_desk_1440: 1440px;
 $r_desk_full_1750: 1750px;
 html {
     font-size: 10px;
+    overflow-x: hidden;
     @media (max-width: $r_mob_500) {
         font-size: 8px;
     }
@@ -37,7 +38,6 @@ body {
     background-image: url(../images/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    overflow-x: hidden;
 }
 
 .header {
