@@ -883,7 +883,7 @@ body {
 .swiper {
     overflow: initial;
     &-slide {
-        border: 3px solid rgba($green, .4);
+        border: 1px solid rgba($green, .4);
         border-radius: 2rem;
         padding: 1rem 3.7rem 3.6rem;
         box-sizing: border-box;
@@ -1356,6 +1356,7 @@ body {
         gap: 1.5rem;
         padding: 0;
         margin: 6rem auto;
+        transition: .3s;
         @media (max-width: $r_mob_360) {
             margin: 3.4rem auto 0;
             font-size: 1.3rem;
@@ -1769,6 +1770,7 @@ body {
             display: flex;
             align-items: center;
             gap: 3rem;
+            transition: .3s;
             @media (max-width: $r_tab) {
                 gap: 1rem;
             }
